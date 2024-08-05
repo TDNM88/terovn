@@ -11,6 +11,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      flex-direction: column;
     }
     .footer {
       position: absolute;
@@ -29,14 +30,50 @@
       cursor: pointer;
       box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
       transition: all 0.3s ease-in-out;
+      margin: 10px;
     }
     .button-3d:hover {
       transform: translateY(-5px);
       box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
     }
+    .app-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .app {
+      text-align: center;
+      margin: 20px;
+    }
+    .app img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
+  <div class="app-container">
+    <div class="app">
+      <img src="https://via.placeholder.com/100" alt="IMG2IMG">
+      <button class="button-3d" onclick="location.href='img2img.html'">IMG2IMG</button>
+    </div>
+    <div class="app">
+      <img src="https://via.placeholder.com/100" alt="Fashion">
+      <button class="button-3d" onclick="location.href='fashion.html'">Fashion</button>
+    </div>
+    <div class="app">
+      <img src="https://via.placeholder.com/100" alt="Faceswap">
+      <button class="button-3d" onclick="location.href='faceswap.html'">Faceswap</button>
+    </div>
+    <div class="app">
+      <img src="https://via.placeholder.com/100" alt="Gen">
+      <button class="button-3d" onclick="location.href='gen.html'">Gen</button>
+    </div>
+  </div>
+
   <div class="footer">
     <button class="button-3d" id="load-coze-btn">Một sản phẩm của TDNM</button>
   </div>
