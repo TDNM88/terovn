@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TDNM</title>
+  <style>
+    body {
+      background-image: url('https://image.tensorartassets.com/cdn-cgi/image/anim=true,w=2560,f=jpeg,q=85/posts/images/637285499601470901/4a88a351-3975-4839-9ab4-14096285520c.jpg');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .button-3d {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+      transition: all 0.3s ease-in-out;
+    }
+    .button-3d:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="footer">
+    <button class="button-3d" id="load-coze-btn">Một sản phẩm của TDNM</button>
+  </div>
+
+  <script>
+    document.getElementById('load-coze-btn').addEventListener('click', function() {
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7370157905833984018',
+        },
+        componentProps: {
+          title: 'TDNM',
+        },
+        open: true, // Open the chat app immediately
+      });
+    });
+  </script>
+</body>
+</html>
