@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>IMG2IMG</title>
+  <title>Gen</title>
   <style>
     body {
       display: flex;
@@ -13,21 +13,10 @@
       padding: 0;
       background-color: #000000;
     }
-    
-    img {
-      width: 100%;
-      height: auto;
-    }
   </style>
-  <script>
-    setTimeout(function() {
-      window.location.href = 'https://huggingface.co/spaces/radames/Real-Time-Text-to-Image-SDXL-Lightning';
-    }, 3000);
-  </script>
 </head>
 <body>
-  <a href="https://huggingface.co/spaces/Manjushri/SDXL-Turbo-Img2Img-CPU">
-    <img src="https://image.tensorartassets.com/cdn-cgi/image/w=1536,f=jpeg,q=85/posts/images/633032296567451621/eb3139ce-3e94-44d0-9b01-ba3aae45eadd.jpg" alt="background" />
-  </a>
+  <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.26.0/gradio.js"></script>
+  <gradio-app src="https://radames-real-time-text-to-image-sdxl-lightning.hf.space"></gradio-app>
 </body>
 </html>
